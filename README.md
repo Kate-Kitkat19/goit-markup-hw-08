@@ -26,3 +26,38 @@
     border: 1px solid black;
   }
 }
+__________________________________________________________
+
+//стилі для кнопок мобільного меню:
+.button-menu{
+  dispay: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  bcg-color: transparent;
+}
+
+.button-menu.is-open .icon-menu{
+  display: none;
+}
+
+.icon-cross{
+  display: none;
+}
+
+.button-menu.is-open .icon-cross{
+  dispaly: block;
+}
+__________________________________________
+
+.menu-container{
+  display: none;
+  +styles
+
+  &.is-open{
+    display: block;
+  }
+}
+
+___________________________-
+додати медіа-правило для ретини в окремий міксин!!
