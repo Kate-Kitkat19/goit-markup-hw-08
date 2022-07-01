@@ -802,6 +802,11 @@ ul {
   background-color: var(--btn-hover-color);
 }
 
+.menu-btn {
+  border: none;
+  background-color: var(--bcg-color);
+}
+
 .subscription__button {
   margin-left: 12px;
   padding-left: 28px;
