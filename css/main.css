@@ -314,20 +314,24 @@ ul {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.header__container {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
-
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
