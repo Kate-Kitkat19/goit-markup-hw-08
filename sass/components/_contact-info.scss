@@ -1,12 +1,9 @@
 .contacts {
-  display: flex;
-  margin-left: auto;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   &__icon {
     fill: currentColor;
-    margin-right: 10px;
   }
 
   &__address {
@@ -14,19 +11,8 @@
   }
 }
 
-.contacts__item--row:not(:last-child) {
-  margin-right: 30px;
-}
-
-.contacts__item--column:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .contacts__phone,
 .contacts__email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 500;
   color: var(--text-color-secondary);
   text-decoration: none;

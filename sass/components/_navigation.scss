@@ -1,18 +1,9 @@
 .navigation {
-  display: flex;
-  align-items: center;
 
   &__menu {
-    display: flex;
-    align-items: center;
-
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: var(--standard-margin);
   }
 }
 

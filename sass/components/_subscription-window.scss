@@ -1,9 +1,7 @@
 .subscription {
-  margin-left: auto;
 
   &__cta {
     display: inline-block;
-    margin-bottom: 20px;
     font-size: inherit;
     font-weight: 700;
     line-height: 1.14;
@@ -11,17 +9,17 @@
     color: var(--bcg-color);
   }
 
-  &__form {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
+  // &__form {
+  //   position: relative;
+  //   display: flex;
+  //   justify-content: center;
+  // }
 }
 
 .subscription__email-input {
-  display: block;
-  width: 358px;
-  height: 50px;
+  // display: block;
+  // width: 358px;
+  // height: 50px;
   padding-left: 16px;
   padding-right: 16px;
   background-color: inherit;

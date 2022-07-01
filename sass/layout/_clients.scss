@@ -1,17 +1,5 @@
-.clients__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.clients__item {
-  width: 170px;
-  height: 92px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
 
 .clients__link {
   display: inline-flex;
