@@ -1,4 +1,9 @@
 .benefits {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__subtitle {
     margin-bottom: 10px;
@@ -8,7 +13,10 @@
   }
 
   &__icon-wrap {
-    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--bcg-color-secondary);
@@ -19,5 +27,11 @@
     color: var(--text-color-secondary);
     text-transform: none;
     line-height: 1.7;
+  }
+}
+
+@media screen and(max-width:767px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }

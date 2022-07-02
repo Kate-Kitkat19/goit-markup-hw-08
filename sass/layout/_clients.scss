@@ -1,13 +1,35 @@
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+@media screen and (max-width: 767px) {
+  .clients__item {
+    width: calc((100% - 30px) / 2);
+    height: 92px;
+  }
 
+  .clients__item:not(:nth-child(even)) {
+    margin-right: 30px;
+  }
+
+  .clients__item:not(:nth-child(n + 5)) {
+    margin-bottom: 30px;
+  }
+
+}
 
 .clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
+  height: 100%;
   border: 1px solid var(--links-color);
   border-radius: 4px;
   color: var(--links-color);
-  @include transition (color, border-color);
+  @include transition(color, border-color);
 
   &:hover,
   &:focus {

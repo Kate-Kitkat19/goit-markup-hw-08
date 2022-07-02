@@ -9,11 +9,13 @@
   }
 
   &__member-photo {
+    margin-bottom: 30px;
     display: block;
     max-width: 100%;
   }
 
   &__member-name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -21,6 +23,7 @@
   }
 
   &__member-position {
+    margin-bottom: 16px;
     color: var(--text-color-secondary);
     font-size: 16px;
     line-height: 1.19;
@@ -28,8 +31,20 @@
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   .team__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .team__item {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    padding-bottom: 30px;
   }
 }
