@@ -3,15 +3,6 @@
   align-items: center;
 }
 
-.services__item {
-  margin-right: 30px;
-  flex-basis: calc((100% - 90px) / 3);
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
 .services__overlay {
   display: block;
   position: relative;
