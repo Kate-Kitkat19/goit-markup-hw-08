@@ -52,3 +52,9 @@
 .contacts__item--column:not(:last-child) {
   margin-bottom: 8px;
 }
+
+@media screen and (max-width: 767px) {
+  .header__contacts {
+    display: none;
+  }
+}
