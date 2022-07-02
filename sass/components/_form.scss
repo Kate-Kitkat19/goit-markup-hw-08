@@ -14,7 +14,7 @@
     padding-left: 42px;
     outline: 1px solid transparent;
     cursor: pointer;
-    
+
     @include transition(border-color);
   }
 }
@@ -90,9 +90,6 @@
 }
 
 .policy__custom-chechbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 16px;
   height: 15px;
   margin-right: 9px;
@@ -113,9 +110,6 @@
 }
 
 .policy__body {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color-secondary);
