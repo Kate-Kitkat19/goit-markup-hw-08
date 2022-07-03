@@ -597,6 +597,11 @@ ul {
     padding-top: 3rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .product__text-wrap {
+    padding-top: 49px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .product__text-wrap {
     padding-top: 63px;
@@ -961,6 +966,8 @@ ul {
 }
 
 .works-catalog__link {
+  width: 100%;
+  height: 100%;
   display: block;
   transition-property: box-shadow;
   transition-duration: 250ms;

@@ -26,8 +26,12 @@
     padding-right: 24px;
     z-index: 2;
 
-    @media screen and (max-width:480px){
+    @media screen and (max-width: 480px) {
       padding-top: 3rem;
+    }
+
+    @include tablet {
+      padding-top: 49px;
     }
 
     @include desktop {
