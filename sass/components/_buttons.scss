@@ -106,7 +106,19 @@
 }
 
 .buttons-set {
-  &__item:not(:last-child) {
-    margin-right: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  margin-bottom: 40px;
+
+  @include tablet{
+    justify-content: center;
+    row-gap: 0;
+    margin-bottom: 30px;
+    margin-right: -8px;
   }
+}
+
+.buttons-set__item {
+  margin-right: 8px;
 }

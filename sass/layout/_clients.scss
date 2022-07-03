@@ -2,20 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
 }
 
 @media screen and (max-width: 767px) {
   .clients__item {
     width: calc((100% - 30px) / 2);
     height: 92px;
-  }
-
-  .clients__item:not(:nth-child(even)) {
-    margin-right: 30px;
-  }
-
-  .clients__item:not(:nth-child(n + 5)) {
-    margin-bottom: 30px;
   }
 
 }

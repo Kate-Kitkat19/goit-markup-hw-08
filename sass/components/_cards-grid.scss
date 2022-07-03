@@ -1,16 +1,18 @@
-
+.works-catalog{
+  margin-bottom: -30px;
+  @include tablet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 .works-catalog__item {
-  margin-right: 30px;
   margin-bottom: 30px;
-
-  // &:nth-child(3n) {
-  //   margin-right: 0;
-  // }
-
-  // &:nth-last-child(-n + 3) {
-  //   margin-bottom: 0;
-  // }
+  @include tablet{
+    width: calc((100% - 30px) / 2);
+    height: 440px;
+  }
 }
 
 .works-catalog__link {
