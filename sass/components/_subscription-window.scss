@@ -2,6 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include tablet{
+    flex-direction: column;
+  }
+
+  @include desktop{
+    margin-left: auto;
+  }
 
   &__cta {
     text-align: center;
@@ -11,18 +18,29 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--bcg-color);
+
+    @include desktop{
+      text-align: start;
+    }
   }
 
   &__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @include tablet{
+      flex-direction: column;
+    }
+
+    @include desktop{
+      flex-direction: row;
+    }
   }
 }
 
 .subscription__email-input {
-  // display: block;
-  width: 100%;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   padding-right: 16px;
@@ -34,6 +52,14 @@
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+
+  @include tablet{
+    display: block;
+  }
+
+  @include desktop{
+    width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;

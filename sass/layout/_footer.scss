@@ -7,5 +7,15 @@
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
+
+    @include tablet{
+      margin-left: 61px;
+    }
+
+    @include desktop{
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 70px;
+    }
   }
 }

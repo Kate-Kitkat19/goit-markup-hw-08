@@ -12,6 +12,11 @@
   margin-bottom: 20px;
   color: var(--bcg-color);
 
+  @include desktop{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   &:visited {
     color: var(--bcg-color);
   }

@@ -6,12 +6,19 @@
   column-gap: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .clients__item {
+.clients__item {
+  height: 92px;
+  @include mobile {
     width: calc((100% - 30px) / 2);
-    height: 92px;
   }
 
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {

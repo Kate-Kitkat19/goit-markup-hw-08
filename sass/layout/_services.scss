@@ -1,5 +1,12 @@
-// .services__list {
-// }
+.services__list {
+  display: flex;
+  align-items: center;
+}
+
+.services__item {
+  margin-right: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
 
 .services__overlay {
   display: block;
@@ -27,6 +34,9 @@
   height: 70px;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .services__text {

@@ -1,13 +1,32 @@
 .benefits {
-  margin-bottom: -30px;
-  
+  &__list {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 30px;
+      row-gap: 30px;
+    }
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    @media screen and(max-width:767px) {
-      margin-bottom: 30px;
+
+    @media screen and (max-width:767px) {
+      .benefits__item:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+      align-items: flex-start;
+    }
+
+    @include desktop{
+      flex-basis: calc((100% - 120px) / 4);
     }
   }
 
@@ -32,6 +51,6 @@
   &__text {
     color: var(--text-color-secondary);
     text-transform: none;
-    line-height: 1.7;
+    line-height: 1.71;
   }
 }

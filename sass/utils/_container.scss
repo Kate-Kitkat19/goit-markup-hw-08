@@ -24,3 +24,12 @@
   background-repeat: no-repeat;
   background-size: 480px 400px;
 }
+
+.footer__container {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
