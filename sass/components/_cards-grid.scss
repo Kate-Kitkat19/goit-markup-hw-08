@@ -1,24 +1,29 @@
-.works-catalog{
+.works-catalog {
   margin-bottom: -30px;
-  @include tablet{
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 30px;
   }
 }
 
 .works-catalog__item {
   margin-bottom: 30px;
-  @include tablet{
+  @include tablet {
     width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop{
+    width: calc((100% - 60px) / 3);
   }
 }
 
 .works-catalog__link {
+  display: flex;
+  flex-direction: column;
   @extend %link;
   width: 100%;
   height: 100%;
-  display: block;
   @include transition(box-shadow);
 
   &:hover,

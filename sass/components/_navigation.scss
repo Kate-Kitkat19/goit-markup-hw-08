@@ -1,9 +1,19 @@
 .navigation {
+  display: flex;
+  align-items: center;
+
   &__menu {
+    display: flex;
+    align-items: center;
+    margin-right: -50px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
+
+    &__item {
+      margin-right: var(--standard-margin);
+    }
 }
 
 .navigation__link {
@@ -41,7 +51,7 @@
     display: none;
   }
 
-  .navigation__menu{
+  .navigation__menu {
     display: none;
   }
 }

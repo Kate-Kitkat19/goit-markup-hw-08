@@ -13,6 +13,7 @@
   &__img {
     display: block;
     width: 100%;
+    height: auto;
   }
 
   &__text-wrap {
@@ -27,7 +28,7 @@
     z-index: 2;
 
     @media screen and (max-width: 480px) {
-      padding-top: 3rem;
+      padding-top: 15px;
     }
 
     @include tablet {
@@ -52,6 +53,7 @@
     border-bottom: $border-color;
     border-left: $border-color;
     border-right: $border-color;
+    flex-grow: 1;
   }
 
   &__category {

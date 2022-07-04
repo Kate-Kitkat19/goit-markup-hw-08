@@ -25,6 +25,10 @@
 .logo--dark {
   color: var(--regular-text-color);
 
+  @include tablet{
+    margin-right: 88px;
+  }
+
   &:visited {
     color: var(--regular-text-color);
   }
