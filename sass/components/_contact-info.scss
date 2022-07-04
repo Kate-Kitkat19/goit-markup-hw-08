@@ -35,10 +35,20 @@
   }
 }
 
+@include tablet {
+  .contacts__item--row {
+    margin-bottom: 10px;
+  }
+}
+
 .header__contacts {
   font-weight: 500;
   color: var(--text-color-secondary);
   text-decoration: none;
+  @include tablet {
+    margin-top: 21px;
+    margin-left: auto;
+  }
 }
 
 .footer__contacts {
@@ -48,7 +58,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  @include desktop{
+  @include desktop {
     text-align: start;
   }
 }

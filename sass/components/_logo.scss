@@ -12,7 +12,7 @@
   margin-bottom: 20px;
   color: var(--bcg-color);
 
-  @include desktop{
+  @include desktop {
     margin-left: 0;
     margin-right: 0;
   }
@@ -24,8 +24,11 @@
 
 .logo--dark {
   color: var(--regular-text-color);
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
 
-  @include tablet{
+  @include tablet {
     margin-right: 88px;
   }
 
