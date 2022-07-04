@@ -92,11 +92,29 @@
             <li class="works-catalog__item">
               <a href="" class="works-catalog__link">
                 <div class="product">
-                  <img
-                    src="./images/screen-mob@1x.jpg"
-                    alt="экран ноутбука с фото"
-                    class="product__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images\screen-desktop@1x.jpg 1x,
+                        images\screen-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="images\screen-tab@1x.jpg 1x, images\screen-tab@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="images\screen-mob@1x.jpg 1x, images\screen-mob@2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/screen-mob@1x.jpg"
+                      alt="экран ноутбука с фото"
+                      class="product__img"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__text-wrap">
                       <p class="product__text">
@@ -116,11 +134,29 @@
             <li class="works-catalog__item">
               <a href="" class="works-catalog__link">
                 <div class="product">
-                  <img
-                    src="./images/bascetball-mob@1x.jpg"
-                    alt="двое мужчин играют в баскетбол"
-                    class="product__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images\bascetball-desktop@1x.jpg 1x,
+                        images\bascetball-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="images\bascetball-tab@1x.jpg 1x, images\bascetball-tab@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="images\bascetball-mob@1x.jpg 1x, images\bascetball-mob@2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/bascetball-mob@1x.jpg"
+                      alt="двое мужчин играют в баскетбол"
+                      class="product__img"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__text-wrap">
                       <p class="product__text">
@@ -140,20 +176,26 @@
             <li class="works-catalog__item">
               <a href="" class="works-catalog__link">
                 <div class="product">
-                  <img
-                    srcset="
-                      ./images/seafood-mob@1x.jpg     450w,
-                      ./images/seafood-mob@2x.jpg     900w,
-                      ./images/seafood-tab@1x.jpg     354x,
-                      ./images/seafood-tab@2x.jpg     708w,
-                      ./images/seafood-desktop@1x.jpg 370w,
-                      ./images/seafood-desktop@2x.jpg 740w
-                    "
-                    src="./images/seafood-mob@1x.jpg"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                    alt="лого ресторана морепродуктов"
-                    class="product__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="images\seafood-desktop@1x.jpg 1x, images\seafood-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="images\seafood-tab@1x.jpg 1x, images\seafood-tab@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="images\seafood-mob@1x.jpg 1x, images\seafood-mob@2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/seafood-mob@1x.jpg"
+                      alt="лого ресторана морепродуктов"
+                      class="product__img"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__text-wrap">
                       <p class="product__text">
@@ -174,7 +216,25 @@
             <li class="works-catalog__item">
               <a href="" class="works-catalog__link">
                 <div class="product">
-                  <img src="./images/headphones-mob@1x.jpg" alt="наушники" class="product__img" />
+                  <picture>
+                    <source
+                      srcset="
+                        images\headphones-desktop@1x.jpg 1x,
+                        images\headphones-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="images\headphones-tab@1x.jpg 1x, images\headphones-tab@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="images\headphones-mob@1x.jpg 1x, images\headphones-mob@2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/headphones-mob@1x.jpg" alt="наушники" class="product__img" />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__text-wrap">
                       <p class="product__text">
@@ -195,7 +255,21 @@
             <li class="works-catalog__item">
               <a href="" class="works-catalog__link">
                 <div class="product">
-                  <img src="./images/boxes-mob@1x.jpg" alt="две коробки" class="product__img" />
+                  <picture>
+                    <source
+                      srcset="images\boxes-desktop@1x.jpg 1x, images\boxes-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="images\boxes-tab@1x.jpg 1x, images\boxes-tab@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="images\boxes-mob@1x.jpg 1x, images\boxes-mob@2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/boxes-mob@1x.jpg" alt="две коробки" class="product__img" />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__text-wrap">
                       <p class="product__text">
@@ -216,7 +290,26 @@
             <li class="works-catalog__item">
               <a href="" class="works-catalog__link">
                 <div class="product">
-                  <img src="./images/comp-mob@1x.jpg" alt="экран компьютера" class="product__img" />
+                  <picture>
+                    <source
+                      srcset="images\comp-desktop@1x.jpg 1x, images\comp-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="images\comp-tab@1x.jpg 1x, images\comp-tab@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="images\comp-mob@1x.jpg 1x, images\comp-mob@2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/comp-mob@1x.jpg"
+                      alt="экран компьютера"
+                      class="product__img"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__text-wrap">
                       <p class="product__text">
@@ -237,7 +330,22 @@
             <li class="works-catalog__item">
               <a href="" class="works-catalog__link">
                 <div class="product">
-                  <img src="./images/magazine-mob@1x.jpg" alt="журнал" class="product__img" />
+                  <picture>
+                    <source
+                      srcset="images\magazine-desktop@1x.jpg 1x, images\magazine-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="images\magazine-tab@1x.jpg 1x, images\magazine-tab@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="images\magazine-mob@1x.jpg 1x, images\magazine-mob@2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/magazine-mob@1x.jpg" alt="журнал" class="product__img" />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__text-wrap">
                       <p class="product__text">
@@ -258,11 +366,26 @@
             <li class="works-catalog__item">
               <a href="" class="works-catalog__link">
                 <div class="product">
-                  <img
-                    src="./images/labtag-mob@1x.jpg"
-                    alt="бирка с текстом"
-                    class="product__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="images\labtag-desktop@1x.jpg 1x, images\labtag-desktop@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="images\labtag-tab@1x.jpg 1x, images\labtag-tab@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="images\labtag-mob@1x.jpg 1x, images\labtag-mob@2x.jpg 2x"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/labtag-mob@1x.jpg"
+                      alt="бирка с текстом"
+                      class="product__img"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__text-wrap">
                       <p class="product__text">
@@ -283,11 +406,35 @@
             <li class="works-catalog__item">
               <a href="" class="works-catalog__link">
                 <div class="product">
-                  <img
-                    src="./images/growingbusiness-mob@1x.jpg"
-                    alt="человек печатает на макбуке"
-                    class="product__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images\growingbusiness-desktop@1x.jpg 1x,
+                        images\growingbusiness-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        images\growingbusiness-tab@1x.jpg 1x,
+                        images\growingbusiness-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        images\growingbusiness-mob@1x.jpg 1x,
+                        images\growingbusiness-mob@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/growingbusiness-mob@1x.jpg"
+                      alt="человек печатает на макбуке"
+                      class="product__img"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__text-wrap">
                       <p class="product__text">

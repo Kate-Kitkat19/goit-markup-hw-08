@@ -132,6 +132,7 @@
               <a href="">
                 <div class="services__overlay">
                   <img
+                    srcset="./images/desk-apps@1x.jpg 1x, ./images/desk-apps@2x.jpg 2x"
                     src="./images/desk-apps@1x.jpg"
                     alt="человек печатает на клавиатуре"
                     class="services__img"
@@ -146,6 +147,7 @@
               <a href="">
                 <div class="services__overlay">
                   <img
+                    srcset="./images/mob-apps@1x.jpg 1x, ./images/mob-apps@2x.jpg 2x"
                     src="./images/mob-apps@1x.jpg"
                     alt="человек с телефоном в руке сидит за ноутбуком"
                     class="services__img"
@@ -160,6 +162,7 @@
               <a href="">
                 <div class="services__overlay">
                   <img
+                    srcset="./images/design@1x.jpg 1x, ./images/design@2x.jpg 2x"
                     src="./images/design@1x.jpg"
                     alt="человек выбирает цвет с картинки на планшете"
                     class="services__img"
@@ -179,12 +182,25 @@
           <h2 class="section-heading">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/igor-mob@1x.jpg"
-                alt="член команды Игорь"
-                class="team__member-photo"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="images\igor-desktop@1x.jpg 1x, images\igor-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images\igor-tab@1x.jpg 1x, images\igor-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images\igor-mob@1x.jpg 1x, images\igor-mob@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/igor-mob@1x.jpg"
+                  alt="член команды Ольга"
+                  class="team__member-photo"
+                />
+              </picture>
               <h3 class="team__member-name">Игорь Демьяненко</h3>
               <p class="team__member-position">Product Designer</p>
               <div class="socials">
@@ -221,12 +237,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/olga-mob@1x.jpg"
-                alt="член команды Ольга"
-                class="team__member-photo"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="images\olga-desktop@1x.jpg 1x, images\olga-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images\olga-tab@1x.jpg 1x, images\olga-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images\olga-mob@1x.jpg 1x, images\olga-mob@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/olga-mob@1x.jpg"
+                  alt="член команды Ольга"
+                  class="team__member-photo"
+                />
+              </picture>
               <h3 class="team__member-name">Ольга Репина</h3>
               <p class="team__member-position">Frontend Developer</p>
               <div class="socials">
@@ -263,12 +292,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/nicolay-mob@1x.jpg"
-                alt="член команды Николай"
-                class="team__member-photo"
-                width="450"
-              />
+              <picture>
+                <source
+                  srcset="images\nicolay-desktop@1x.jpg 1x, images\nicolay-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images\nicolay-tab@1x.jpg 1x, images\nicolay-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images\nicolay-mob@1x.jpg 1x, images\nicolay-mob@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/nicolay-mob@1x.jpg"
+                  alt="член команды Николай"
+                  class="team__member-photo"
+                />
+              </picture>
               <h3 class="team__member-name">Николай Тарасов</h3>
               <p class="team__member-position">Marketing</p>
               <div class="socials">
@@ -305,12 +347,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="images/mychail-mob@1x.jpg 1x, images\mychail-mob@2x.jpg 2x, images\mychail-tab@1x.jpg 1x, images\mychail-tab@2x.jpg 2x"
-                src="./images/mychail-mob@1x.jpg"
-                alt="член команды Михаил"
-                class="team__member-photo"
-              />
+              <picture>
+                <source
+                  srcset="images\mychail-desktop@1x.jpg 1x, images\mychail-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="images\mychail-tab@1x.jpg 1x, images\mychail-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="images\mychail-mob@1x.jpg 1x, images\mychail-mob@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/mychail-mob@1x.jpg"
+                  alt="член команды Михаил"
+                  class="team__member-photo"
+                />
+              </picture>
               <h3 class="team__member-name">Михаил Ермаков</h3>
               <p class="team__member-position">UI Designer</p>
               <div class="socials">
