@@ -1028,6 +1028,10 @@ img {
   }
 }
 
+.nav-link {
+  color: inherit;
+}
+
 .navigation__link--mob {
   transition-property: color;
   transition-duration: 250ms;

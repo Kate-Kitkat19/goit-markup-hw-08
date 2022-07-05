@@ -58,6 +58,11 @@
     font-size: 22px;
   }
 }
+
+.nav-link{
+  color: inherit;
+}
+
 .navigation__link--mob {
   @extend %link;
   @include transition(color);
