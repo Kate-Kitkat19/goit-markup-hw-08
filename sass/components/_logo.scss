@@ -25,7 +25,6 @@
 .logo--dark {
   color: var(--regular-text-color);
   @media screen and (max-width: 767px) {
-    margin-top: 16px;
   }
 
   @include tablet {

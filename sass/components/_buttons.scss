@@ -19,18 +19,6 @@
   }
 }
 
-.menu-btn {
-  margin-top: 10px;
-  margin-left: auto;
-  display: block;
-  border: none;
-  background-color: var(--bcg-color);
-
-  @include tablet{
-    display: none;
-  }
-}
-
 .subscription__button {
   display: flex;
   align-items: center;
