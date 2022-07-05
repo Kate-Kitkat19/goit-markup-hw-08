@@ -15,6 +15,7 @@
   padding-bottom: 48px;
   padding-left: 40px;
   background-color: var(--bcg-color);
+  overflow-y: auto;
 
   @media screen and (min-width: 320px) and (max-width: 479px) {
     padding-left: 20px;
@@ -29,7 +30,7 @@
   @include transition (color);
 
   &:hover, &:focus{
-    color: var(--accent-color);
+    fill: var(--accent-color);
   }
 
   @include tablet {

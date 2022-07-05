@@ -90,6 +90,9 @@
 }
 
 .policy__custom-chechbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 15px;
   margin-right: 9px;
@@ -110,13 +113,25 @@
 }
 
 .policy__body {
-  font-size: 14px;
-  line-height: 1.71;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--text-color-secondary);
+
+  @include mobile{
+    white-space: nowrap;
+  }
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy__link {
-  display: inline-block;
-  margin-left: 5px;
   color: var(--accent-color);
+  @include mobile{
+    white-space: nowrap;
+  }
 }

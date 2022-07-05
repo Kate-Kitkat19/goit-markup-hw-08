@@ -985,6 +985,7 @@ img {
   padding-bottom: 48px;
   padding-left: 40px;
   background-color: var(--bcg-color);
+  overflow-y: auto;
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .mobile-menu.is-open {
@@ -1002,7 +1003,7 @@ img {
   transition-timing-function: var(--typical-timing-function);
 }
 .menu-btn:hover, .menu-btn:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu-btn {
@@ -1137,7 +1138,7 @@ img {
 .modal__icon {
   position: absolute;
   top: 50%;
-  left: 14px;
+  left: 12px;
   transform: translateY(-50%);
   transition-property: color;
   transition-duration: 250ms;
@@ -1232,6 +1233,9 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   background-color: var(--bcg-color);
@@ -1241,6 +1245,11 @@ img {
   transition-property: color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--typical-timing-function);
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .close-btn {
+    top: 10vmin;
+  }
 }
 .close-btn:hover {
   color: var(--accent-color);
@@ -1567,6 +1576,9 @@ img {
 }
 
 .policy__custom-chechbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 15px;
   margin-right: 9px;
@@ -1587,15 +1599,31 @@ img {
 }
 
 .policy__body {
-  font-size: 14px;
-  line-height: 1.71;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--text-color-secondary);
+}
+@media screen and (min-width: 480px) {
+  .policy__body {
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .policy__body {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy__link {
-  display: inline-block;
-  margin-left: 5px;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .policy__link {
+    white-space: nowrap;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1603,6 +1631,12 @@ img {
   opacity: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .backdrop {
+    padding-bottom: 93px;
+    padding-top: 93px;
+  }
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -1612,7 +1646,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: var(--typical-timing-function);
   opacity: 1;
-  width: 528px;
+  width: 100%;
   height: auto;
   padding-top: 40px;
   padding-right: 40px;
@@ -1622,10 +1656,35 @@ img {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal__title {
+    font-size: 5vmin;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }/*# sourceMappingURL=main.css.map */
