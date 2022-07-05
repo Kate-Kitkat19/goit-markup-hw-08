@@ -93,10 +93,6 @@
   border-radius: 50%;
   @include transition(color, box-shadow);
 
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    top: 10vmin;
-  }
-
   &:hover {
     color: var(--accent-color);
     background-color: var(--bcg-color);

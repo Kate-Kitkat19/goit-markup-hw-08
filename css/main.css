@@ -541,10 +541,6 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.services__img {
-  display: block;
-}
-
 .services__text-wrap {
   position: absolute;
   width: 100%;
@@ -704,9 +700,7 @@ img {
   letter-spacing: 0.06em;
 }
 .product__img {
-  display: block;
   width: 100%;
-  height: auto;
 }
 .product__text-wrap {
   position: absolute;
@@ -986,6 +980,7 @@ img {
   padding-left: 40px;
   background-color: var(--bcg-color);
   overflow-y: auto;
+  z-index: 99;
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .mobile-menu.is-open {
@@ -1245,11 +1240,6 @@ img {
   transition-property: color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--typical-timing-function);
-}
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .close-btn {
-    top: 10vmin;
-  }
 }
 .close-btn:hover {
   color: var(--accent-color);
@@ -1659,6 +1649,7 @@ img {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .modal {
     width: 100%;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 480px) {
