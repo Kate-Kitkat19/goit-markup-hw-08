@@ -28,9 +28,10 @@
   display: block;
   border: none;
   background-color: var(--bcg-color);
-  @include transition (color);
+  @include transition(color);
 
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     fill: var(--accent-color);
   }
 
@@ -59,13 +60,10 @@
   }
 }
 
-.nav-link{
-  color: inherit;
-}
-
 .navigation__link--mob {
   @extend %link;
   @include transition(color);
+  color: inherit;
 
   &:visited {
     color: inherit;

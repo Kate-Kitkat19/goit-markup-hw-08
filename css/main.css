@@ -1028,14 +1028,11 @@ img {
   }
 }
 
-.nav-link {
-  color: inherit;
-}
-
 .navigation__link--mob {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--typical-timing-function);
+  color: inherit;
 }
 .navigation__link--mob:visited {
   color: inherit;
