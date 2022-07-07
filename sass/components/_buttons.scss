@@ -121,6 +121,10 @@
     margin-bottom: 30px;
     margin-right: -8px;
   }
+
+  @include desktop{
+    margin-bottom: 50px;
+  }
 }
 
 .buttons-set__item {
